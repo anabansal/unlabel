@@ -1,6 +1,6 @@
-// Keeps Plainshot working offline after the first visit.
-const CACHE = 'plainshot-v1';
-const FILES = ['./', 'index.html', 'style.css', 'clean.js', 'zip.js', 'app.js', 'fonts/inter-latin.woff2', 'favicon.svg', 'manifest.webmanifest'];
+// Keeps Unlabel working offline after the first visit.
+const CACHE = 'unlabel-v2';
+const FILES = ['./', 'index.html', 'style.css', 'clean.js', 'zip.js', 'app.js', 'fonts/archivo.woff2', 'fonts/martian-mono.woff2', 'favicon.svg', 'manifest.webmanifest'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));

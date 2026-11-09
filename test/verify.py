@@ -11,7 +11,7 @@ SRC = os.path.join(HERE, "fixtures")
 OUT = os.path.join(HERE, "out")
 
 FORBIDDEN = [b"iPhone", b"Apple", b"Jane", b"SN123", b"TrainedAlgorithmic", b"c2pa", b"Photoshop",
-             b"xmpmeta", b"parameters", b"Sampler", b"Plainshot test comment", b"San Francisco",
+             b"xmpmeta", b"parameters", b"Sampler", b"Unlabel test comment", b"San Francisco",
              b"SEFH", b"Re_Edit", b"2024:06:01", b"MPF\0", b"Stable Diffusion"]
 ROTATION = {"phone.jpg": 6, "progressive.jpg": None, "ai.png": 8, "photo.webp": 3, "clean.jpg": None}
 failed = False

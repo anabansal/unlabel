@@ -3,3 +3,5 @@ test/fixtures/
 node_modules/
 __pycache__/
 .impeccable/
+PRODUCT.md
+DESIGN.md

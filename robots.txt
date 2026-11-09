@@ -17,4 +17,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://anabansal.github.io/plainshot/sitemap.xml
+Sitemap: https://anabansal.github.io/unlabel/sitemap.xml

@@ -1,4 +1,4 @@
-"""Builds test photos packed with the kinds of hidden data Plainshot removes.
+"""Builds test photos packed with the kinds of hidden data Unlabel removes.
 
 Needs: pip install pillow piexif
 """
@@ -101,7 +101,7 @@ jpeg = insert_after_soi(
     seg(0xEB, b"JP\0\x01\0\0\0\x01\0\0\0\x20jumb\0\0\0\x18jumdc2pa\0\x11\0\x10\x80\0\0\xaa\0\x38\x9b\x71c2pa\0"),
     seg(0xED, iptc()),
     seg(0xE2, b"MPF\0" + b"\0" * 32),
-    seg(0xFE, b"Plainshot test comment"),
+    seg(0xFE, b"Unlabel test comment"),
 )
 second = io.BytesIO()
 picture(64, 48).save(second, "JPEG")

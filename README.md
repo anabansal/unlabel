@@ -1,23 +1,23 @@
-# Plainshot
+# Unlabel
 
-**Post the photo, not the data.** Plainshot removes hidden metadata from your photos (GPS location, camera and phone details, dates, AI source tags and edit history) before you post them to Instagram. It runs entirely in your browser, so your photos never leave your device.
+**AI label remover for Instagram photos.** Unlabel removes the hidden tags that make Instagram add an "AI info" label (C2PA Content Credentials, IPTC DigitalSourceType, AI prompts), plus GPS location, camera and phone details, dates and edit history. It runs entirely in your browser, so your photos never leave your device.
 
-**Use it:** https://anabansal.github.io/plainshot/
+**Use it:** https://anabansal.github.io/unlabel/
 
-![Plainshot removes location, camera, date and AI tags from photos](og.png)
+![Unlabel: a photo print and its lab slip listing the removed AI tag, location and camera data](og.png)
 
 ## How it works
 
-1. Open the page and drop in one photo or a whole batch. There are no settings and no sign-up.
-2. Each photo gets a card that lists exactly what was removed, with a Download button. Several photos? **Download all** gives you a ZIP.
+1. Open the page and drop one photo or a whole batch into the tray. There are no settings and no sign-up.
+2. Each photo develops into a print with a lab slip that lists exactly what was removed, AI tags first, plus a Download button. Several photos? **Download all** gives you a ZIP.
 3. Upload the clean copies to Instagram yourself.
 
 ## What it removes
 
 | Category | Examples |
 | --- | --- |
-| Location | EXIF GPS coordinates, XMP and IPTC city / country fields |
 | AI & source tags | C2PA Content Credentials (JPEG APP11, PNG `caBX`, WebP `C2PA`), IPTC `DigitalSourceType` such as `trainedAlgorithmicMedia`, Stable Diffusion / ComfyUI prompts in PNG text chunks |
+| Location | EXIF GPS coordinates, XMP and IPTC city / country fields |
 | Camera & phone | Make, model, lens, serial number, maker notes |
 | Date & time | Capture, creation and modification dates, PNG `tIME` |
 | Edit history | XMP history, editing software, Photoshop / Lightroom data, Samsung gallery-editor undo data |
@@ -33,7 +33,7 @@
 
 HEIC, AVIF, GIF and other formats the browser can decode are saved as a fresh high-quality JPEG with no metadata.
 
-**Limits:** Plainshot can't remove invisible watermarks woven into the pixels themselves (such as Google SynthID), and platforms may still label content based on other signals.
+**Limits:** Unlabel can't remove invisible watermarks woven into the pixels themselves (such as Google SynthID), and platforms may still label content based on other signals.
 
 ## Privacy
 

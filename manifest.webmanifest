@@ -1,6 +1,6 @@
 {
-  "name": "Plainshot",
-  "short_name": "Plainshot",
+  "name": "Unlabel",
+  "short_name": "Unlabel",
   "description": "Remove location, camera details, dates and AI tags from photos before posting.",
   "start_url": "./",
   "scope": "./",

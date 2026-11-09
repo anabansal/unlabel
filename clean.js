@@ -1,12 +1,12 @@
 /*!
- * Plainshot cleaner
+ * Unlabel cleaner
  * Removes hidden metadata from JPEG, PNG and WebP files without re-encoding.
  * The picture data is copied byte for byte, so quality and colors never change.
  * MIT License.
  */
 (function (root, factory) {
   if (typeof module === 'object' && module.exports) module.exports = factory();
-  else root.PlainshotCleaner = factory();
+  else root.UnlabelCleaner = factory();
 })(typeof self !== 'undefined' ? self : this, function () {
   'use strict';
 
@@ -23,7 +23,7 @@
     thumbnail: 'Hidden preview image',
     extra: 'Extra embedded data'
   };
-  var ORDER = ['location', 'ai', 'device', 'time', 'history', 'author', 'text', 'thumbnail', 'extra'];
+  var ORDER = ['ai', 'location', 'device', 'time', 'history', 'author', 'text', 'thumbnail', 'extra'];
 
   function Report() { this.items = {}; }
   Report.prototype.add = function (key, detail) {

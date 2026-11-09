@@ -1,11 +1,11 @@
 /*!
- * Plainshot ZIP writer: a minimal "stored" (no compression) ZIP builder.
+ * Unlabel ZIP writer: a minimal "stored" (no compression) ZIP builder.
  * Photos are already compressed, so storing them is fast and loses nothing.
  * MIT License.
  */
 (function (root, factory) {
   if (typeof module === 'object' && module.exports) module.exports = factory(require('./clean.js'));
-  else root.PlainshotZip = factory(root.PlainshotCleaner);
+  else root.UnlabelZip = factory(root.UnlabelCleaner);
 })(typeof self !== 'undefined' ? self : this, function (cleaner) {
   'use strict';
 

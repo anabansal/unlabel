@@ -1,9 +1,9 @@
-# Plainshot
+# Unlabel
 
-> Plainshot is a free, open-source web tool that removes hidden metadata from photos before you post them to Instagram or anywhere else. It runs entirely in the browser: photos are never uploaded, there is no sign-up, and image quality is unchanged.
+> Unlabel is a free, open-source web tool that removes hidden metadata from photos before you post them to Instagram or anywhere else. It runs entirely in the browser: photos are never uploaded, there is no sign-up, and image quality is unchanged.
 
-URL: https://anabansal.github.io/plainshot/
-Source: https://github.com/anabansal/plainshot (MIT license)
+URL: https://anabansal.github.io/unlabel/
+Source: https://github.com/anabansal/unlabel (MIT license)
 Author: Anant Bansal
 
 ## What it removes
@@ -22,7 +22,7 @@ Author: Anant Bansal
 - Orientation: a minimal EXIF block containing only the Orientation tag is written back, so photos do not rotate
 
 ## How to use
-1. Open https://anabansal.github.io/plainshot/
+1. Open https://anabansal.github.io/unlabel/
 2. Drag in one or more photos (or tap "choose photos", or paste). Cleaning starts automatically; there are no settings.
 3. Each photo shows a card listing what was removed and a Download button. With several photos, "Download all" saves a ZIP.
 4. Upload the cleaned copies to Instagram.
