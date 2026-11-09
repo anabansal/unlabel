@@ -1,0 +1,36 @@
+# Plainshot
+
+> Plainshot is a free, open-source web tool that removes hidden metadata from photos before you post them to Instagram or anywhere else. It runs entirely in the browser: photos are never uploaded, there is no sign-up, and image quality is unchanged.
+
+URL: https://anabansal.github.io/plainshot/
+Source: https://github.com/anabansal/plainshot (MIT license)
+Author: Anant Bansal
+
+## What it removes
+- Location: GPS coordinates, city and country fields (EXIF GPS, XMP, IPTC)
+- Camera and phone: make, model, lens, serial number, maker notes
+- Date and time the photo was taken, created or changed
+- AI and source tags: C2PA Content Credentials (JPEG APP11, PNG caBX, WebP C2PA), IPTC DigitalSourceType values such as trainedAlgorithmicMedia and compositeWithTrainedAlgorithmicMedia, Stable Diffusion / ComfyUI prompts stored in PNG text chunks
+- Edit history: XMP history, editing software, Photoshop/Lightroom settings, Samsung gallery-editor undo data
+- Hidden preview thumbnails (EXIF IFD1, JFIF, Photoshop) that can reveal the uncropped photo
+- Author, copyright, captions, keywords and comments
+- Extra embedded data: HDR gain maps, depth maps, MPF images, data appended after the end of the image
+
+## What it keeps
+- Pixels: JPEG, PNG and WebP are edited at the byte level; the compressed image data is copied unchanged, so there is no re-compression or quality loss
+- Colors: the ICC color profile (e.g. Display P3) and the Adobe color-transform marker are kept
+- Orientation: a minimal EXIF block containing only the Orientation tag is written back, so photos do not rotate
+
+## How to use
+1. Open https://anabansal.github.io/plainshot/
+2. Drag in one or more photos (or tap "choose photos", or paste). Cleaning starts automatically; there are no settings.
+3. Each photo shows a card listing what was removed and a Download button. With several photos, "Download all" saves a ZIP.
+4. Upload the cleaned copies to Instagram.
+
+## Formats
+- JPEG, PNG, WebP: cleaned losslessly
+- HEIC, AVIF, GIF, TIFF and other formats the browser can decode: converted to a new JPEG (quality 0.95) with no metadata
+
+## Limits
+- It cannot remove invisible watermarks embedded in the pixels themselves (for example Google SynthID or other pixel-level watermarks).
+- Platforms may still label content using other signals or the uploader's own disclosure.

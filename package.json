@@ -1,0 +1,12 @@
+{
+  "name": "plainshot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Remove location, camera details, dates and AI tags from photos before posting to Instagram. Runs in the browser.",
+  "license": "MIT",
+  "author": "Anant Bansal",
+  "scripts": {
+    "test": "python test/make_fixtures.py && node test/run.js && python -W ignore test/verify.py",
+    "start": "python -m http.server 8080"
+  }
+}
